@@ -1,7 +1,7 @@
-# EqualMark - Python code examples
+# EqualMarker - Python code examples
 
 ## Overview
-![EqualMark workflow](/assets/workflow.png)
+![EqualMarker workflow](/assets/workflow.png)
 
 ## Dependencies
 - pandas
@@ -32,10 +32,10 @@ When splitting by gender, the data samples will be split into two groups: male a
 When splitting by paternal age or maternal age, the data samples will be split into two groups by age median.
 Results will be written to a table file named <code>references-asd.tsv</code>.
 
-### Joint model, one-shot model, and EqualMark
-<code>scripts/mp-type-ASD.py</code> contains the codes for training and evaluating the joint model, one-shot model, and EqualMark.
+### Joint model, one-shot model, and EqualMarker
+<code>scripts/mp-type-ASD.py</code> contains the codes for training and evaluating the joint model, one-shot model, and EqualMarker.
 It performs a grid search on all available hyper-parameter combinations, and outputs all results in two table files.
-The <code>results_single.tsv</code> contains results for the joint model, and the <code>results.tsv</code> contains results for the one-shot model and EqualMark.
+The <code>results_single.tsv</code> contains results for the joint model, and the <code>results.tsv</code> contains results for the one-shot model and EqualMarker.
 This script has the following necessary arguments:
 - gene_list: Name of the biomarker set. One example biomarker set is hard-coded from line 881 to 900.
 - data_source: Name of the data set to load.
